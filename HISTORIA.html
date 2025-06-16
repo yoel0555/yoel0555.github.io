@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Historia</title>
+    
+    <style>
+        @font-face {
+            font-family: 'Cooper Black';
+            src: url('cooper-black.woff') format('woff'); /* Asegúrate de tener este archivo en la misma carpeta */
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        body {
+            background-image: url('bio.jpg'); /* Asegúrate de que esta imagen esté en la misma carpeta */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Cooper Black', sans-serif;
+            color: #2f3e46;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(90deg, #81c784, #66bb6a);
+            padding: 0.5rem;
+            text-align: center;
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        header p {
+            margin: 5px 0 0 0;
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            width: 80px;
+            height: 80px;
+        }
+
+        nav {
+            background-color: #e8f5e9;
+            padding: 1rem;
+            margin-top: 100px; /* espacio para el header fijo */
+        }
+
+        nav a {
+            margin: 0 20px;
+            color: #388e3c;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+
+        .text-box, .final-text-box {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        .text-box p, .final-text-box p {
+            color: #455a64;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .image-box {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            display: inline-block;
+            margin: 1rem auto;
+        }
+
+        .image-box img {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #2e7d32;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo.png" alt="Logo de BioEmpaque" class="logo"> 
+    <h1>BioEmpaque</h1>
+    <p>Sostenibilidad Que Se Envuelve 🌿</p>
+</header>
+
+<nav>
+    <a href="historia.html">Nuestra Historia</a>
+</nav>
+
+<div class="container">
+    <section>
+        <h2 class="section-title">Nuestra Historia</h2>
+        <div class="text-box">
+            <p>
+                Somos un grupo de jóvenes que estudian un bachillerato técnico y que, a partir de un proyecto escolar, decidimos emprender juntos. Preocupados por el impacto negativo de la contaminación plástica en el medio ambiente, llegamos a la conclusión de que debíamos innovar, ofreciendo una alternativa a los empaques plásticos convencionales.
+            </p>
+            <p>
+                Y así es como nace la idea de crear nuestro emprendimiento llamado "BioEmpaque", con una visión hacia el futuro y con la idea de salvar el medio ambiente de la contaminación y desechos. Surgió la idea de crear nuestro primer empaque.
+            </p>
+        </div>
+
+        <p>Aquí uno de nuestros fundadores: Yoel Rodríguez.</p>
+        <div class="image-box">
+            <img src="yoel.jpeg" alt="Foto de Yoel Rodríguez"> <!-- Asegúrate que el archivo se llame yoel.jpeg -->
+        </div>
+
+        <p>La presentación de nuestro producto:</p>
+        <div class="image-box">
+            <img src="presentacion.jpeg" alt="Presentación del producto"> <!-- Cambia al nombre real de la imagen -->
+        </div>
+
+        <div class="final-text-box">
+            <p>
+                Creemos firmemente que cada empaque cuenta. Nuestro objetivo no es solo reemplazar el plástico, sino inspirar a otras empresas a adoptar prácticas más conscientes. 
+                En BioEmpaques, cada producto es una pequeña acción hacia un planeta más limpio.
+            </p>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <style>
+        body {
+            background-image: url('proyecto/fondo1.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+       header {
+    background-color: #3cb371;
+    color: white;
+    padding: 20px;
+    font-size: 40px;
+    font-family: Berlin Sans FB;
+    animation: fadeIn 1.5s ease-in;
+    text-align: center; 
+         }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 250px;
+            height: 250px;
+            display: block;
+            margin: 0 auto 15px;
+            border-radius: 10px;
+        }
+
+        .card p {
+            font-size: 20px;
+            line-height: 1.6;
+            color: #000000;
+        }
+        .logo {
+        position: absolute;
+        top: 40px; 
+        left: 80px;
+        width: 100px;
+        height: auto;
+    }
+    </style>
+</head>
+<body>
+    <header>
+<img src="proyecto/LOGO BIOO.png" alt="Logo de BioEmpaque" class="logo">
+¿Quiénes Somos?
+</header>
+
+    <div class="container">
+        <div class="card">
+            <p>
+                Somos una empresa formada por un grupo de jóvenes que estudian un bachillerato técnico y que, a partir de un proyecto escolar, decidimos emprender juntos.
+                Preocupados por el impacto negativo de la contaminación plástica en el medio ambiente, llegamos a la conclusión de que debíamos 
+                innovar, ofreciendo una alternativa a los empaques plásticos convencionales.
+            </p>
+        </div>
+
+        <div class="card">
+            <video width="320" height="auto" controls>
+  <source src="proyecto/publicidad.mp4" type="video/mp4">
+  Tu navegador no soporta la etiqueta de video.
+</video>
+        </div>
+    </div>
+</body>
+</html>

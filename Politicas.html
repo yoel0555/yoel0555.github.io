@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Políticas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Berlin Sans FB';
+      background: url(d7.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      line-height: 1.6;
+      padding-top: 60px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #81C784, #66BB6A);
+      color: #007515;
+      text-align: center;
+      padding: 80px 20px 40px;
+      font-family: 'Berlin Sans FB';
+      border-bottom: 5px solid #388E3C;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 5px;
+      font-weight: 400;
+    }
+
+    /* Marquesina corregida */
+    .marquee {
+      width: 100%;
+      overflow: hidden;
+      background-color: #c4dc8b;
+      position: relative;
+    }
+
+    .marquee p {
+      display: inline-block;
+      padding: 10px 0;
+      white-space: nowrap;
+      color: #388E3C;
+      font-size: 1.2rem;
+      font-weight: 500;
+      animation: marqueeAnimation 15s linear infinite;
+    }
+
+    @keyframes marqueeAnimation {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #388E3C;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      color: white;
+      padding: 15px 25px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 500;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #66BB6A;
+      transform: scale(1.1);
+    }
+
+    section {
+      padding: 40px 20px;
+      margin: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      scroll-margin-top: 70px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    /* Efecto glass al pasar el mouse */
+    section:hover {
+      background-color: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(10px);
+    }
+
+    section h2 {
+      font-family: 'Berlin Sans FB';
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #388E3C;
+    }
+
+    section p, section ul {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    ul li {
+      margin-bottom: 15px;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '🌱';
+      position: absolute;
+      left: 0;
+      color: #388E3C;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #388E3C;
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Botón Volver arriba */
+    #volver-arriba {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #66BB6A;
+      color: white;
+      border: none;
+      padding: 12px 18px;
+      font-size: 16px;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+      z-index: 1001;
+    }
+
+    #volver-arriba:hover {
+      background-color: #4CAF50;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Políticas</h1>
+    <div class="marquee">
+      <p>Sostenibilidad que se envuelve</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#reglas">Reglas</a>
+  </nav>
+
+  <section id="inicio">
+    <h2>Bienvenidos</h2>
+<center><img src="d9.png" alt="Empaque ecológico" class="imagen-polaroid">
+ </center>
+    <p>Bioempaque ofrece soluciones biodegradables que les permiten reducir su huella ambiental, atender la demanda de consumidores conscientes y fortalecer la imagen de sus marcas mediante empaques amigables con el entorno.</p>
+  </section>
+
+  <section id="reglas">
+    <h2>Reglas de la Empresa</h2>
+    <ul>
+      <p><li><strong>Ámbito ambiental</strong></li></P>
+<p>✾Priorizar el uso de materiales reciclados y biodegradables en al menos el 90% de la producción.</p>
+<p>✾Minimizar el consumo de energía y agua mediante tecnologías limpias y procesos optimizados.</P>
+<P>✾Realizar auditorías ambientales anuales para verificar el cumplimiento de objetivos de sostenibilidad.</p>
+  <li><strong>Ámbito de mejora continua</strong></li>
+<p>✾Evaluar periódicamente el ciclo de vida de los productos para identificar oportunidades de mejora en impacto ambiental.</P>
+<p>✾Fomentar la investigación y desarrollo de nuevos materiales biodegradables que superen la eficiencia de los actuales. </P>
+<li><strong>Ámbito de producción responsable</strong></li>
+<p>✾ Priorizar el diseño de productos modulares y fáciles de compostar o degradar sin dejar residuos tóxicos.</P>
+<li><strong>Ámbito de responsabilidad social.</strong></li>
+<p>✾Promover la educación ambiental entre empleados, clientes y la comunidad. </P>
+<p>✾Apoyar programas comunitarios de reciclaje y limpieza de espacios públicos.</P>
+<p>✾Garantizar condiciones laborales justas y seguras para todos los colaboradores. </P>
+<p>✾Incluir en la cadena de valor a recolectores de residuos reciclables y cooperativas locales. </P>
+  <li><strong>Ámbito de transparencia y comunicación </strong></li>
+<p>✾Etiquetar todos los productos con información clara sobre su composición y tiempo estimado de biodegradación. </P>
+<p>✾Mantener canales abiertos de comunicación con clientes, comunidades y partes interesadas sobre el impacto ambiental de la empresa. </P>
+      <p><li><strong>Ámbito economíco</strong></li></P>
+<p>✾Fomentar el diseño de productos que puedan reintegrarse al ciclo productivo. </P>
+<p>✾Incentivar a los clientes a reutilizar los empaques mediante campañas informativas y beneficios comerciales. </P>
+    </ul>
+  </section>
+
+</body>
+</html>

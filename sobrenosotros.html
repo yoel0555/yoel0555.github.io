@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros</title>
+    <style>
+        body {
+            font-family: Berlin Sans FB;
+            background-image: url(fondo1.jpg);
+            background-size: cover;
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(to right, #28a745, #218838);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .branding h1 {
+            font-size: 48px;
+            margin: 0;
+            font-weight: bold;
+            letter-spacing: 2px;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        .branding p {
+            font-size: 20px;
+            margin-top: 15px;
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 10px 20px;
+            border-radius: 12px;
+            display: inline-block;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        .benefits-container::-webkit-scrollbar-thumb {
+            background-color: #28a745;
+            border-radius: 6px;
+        }
+
+        .benefits {
+            display: flex;
+            gap: 20px;
+        }
+
+        .benefit {
+            flex: 0 0 auto;
+            max-width: 250px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            transition: transform 0.3s;
+            animation: zoomIn 1s ease forwards;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            scroll-snap-align: start;
+        }
+
+        .benefit:hover {
+            transform: scale(1.05);
+        }
+
+        .benefit img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+        }
+
+        .benefit p {
+            font-size: 16px;
+            color: #98c172;
+            margin-top: 10px;
+        }
+
+        @keyframes zoomIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to   { opacity: 1; transform: scale(1); }
+        }
+
+        section {
+            padding: 40px;
+            margin: 20px;
+        }
+
+        section h2 {
+            font-size: 28px;
+            color: #346c00;
+        }
+
+        section h3 {
+            font-size: 22px;
+            color: #f7fff0;
+            margin-top: 20px;
+        }
+
+        .cards-container {
+            display: flex;
+            gap: 20px;
+            padding-bottom: 20px;
+            flex-wrap: wrap;
+            scroll-snap-type: none;
+            overflow-x: unset;
+        }
+
+        .card {                     
+            flex: 1 1 300px;
+            background-color: #28a745;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 450px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="branding">
+            <h1>Sobre Nosotros</h1>
+        </div>
+    </header>
+
+
+<br><br><br><br><br><br><br><br>
+<marquee bgcolor="#b8e69a", scrollamount="0">
+<section id="Nosotros">
+    <h2><center>Nosotros somos</center></h2>
+    <div style="background-image: url('imagenes/marquesina.jpg'); background-size: cover; background-attachment: fixed; padding: 20px;">
+        <table style="width: 100%; border-collapse: collapse; text-align: center;">
+            <tr>
+                <td style="padding: 15px;">
+                    <img src="Tanilo2.jpg" alt="TANILO" style="width: 250px; height: auto; border-radius: 8px;"> 
+                    <p>NIKOLAY </p>
+                </td>
+                <td style="padding: 15px;">
+                    <img src="Ashley2.jpg" alt="ASHLEY" style="width: 250px; height: auto; border-radius: 8px;">
+ <p>ASHLEY </p>
+                </td>
+                <td style="padding: 15px;">
+                    <img src="Mau.jpg" alt="YOEL" style="width: 270px; height: auto; border-radius: 8px;">
+ <p>YOEL</p>
+                </td>
+               <td style="padding: 15px;">
+                    <img src="Tadeo2.jpg" alt="TADEO" style="width: 250px; height: auto; border-radius: 8px;">
+ <p>TADEO </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</section>
+</marquee>
+<br><br><br><br><br><br>
+
+   <marquee bgcolor="#b8e69a" scrollamount="0"> 
+    <section id="Conócenos">
+    <h2>Conócenos</h2>   
+</Marquee>
+<br><br><br>
+        <div class="cards-container">
+            <div class="card">
+                <h3>¿Como se formó la empresa?</h3>
+                <p>Nustra esmpresa se formó a partir de un proyecto escolar.</p>
+<p>Fuimos estudiantes preocupados y comprometidos con la sostenibilidad y la innovación.</p>
+<p>Ahora que somos adultos decidimos transformar una idea académica en una iniciativa empresarial real y gracias al compromiso, la creatividad y el trabajo en equipo, el proyecto evolucionó más allá de lo académico, convirtiéndose en una empresa formal que hoy sigue creciendo con la misma pasión con la que comenzó.</p>
+            </div>
+            <div class="card">
+                <h3>Nosotros</h3>
+                <p>Cada integrante de nuestra empresa tiene un papel muy importante y fundamental.</p>
+<p>Nikolay es administrador y promotor del área de marketing. Se encarga de supervisar las operaciones diarias y gestionar el personal.Además, lidera las estrategias de marketing para aumentar la visibilidad de nuestros productos reciclados y atraer nuevos clientes.</p>
+<p> Yoel es administrador y jefe de procesamiento. Coordina el flujo de materiales dentro de la planta. Y se enfoca en la eficiencia y la mejora continua asegurandose de que nuestros procesos sean sostenibles y rentables.</p>
+<p>Tadeo es jefe de logistica y recolector.Él coordina el almacenamiento y el transporte ademas de gestionar la recolección y clasificación de materiales reciclables, contribuyendo al proceso de reciclaje y sostenibilidad de la empresa. </p>
+<p> Y Ashley es gerente general y jefa de marketing. Lidera la empresa tomando decisiones clave para su crecimiento y sostenibilidad. Asimismo es responsable de desarrollar y ejecutar campañas promocionales que destacan nuestras iniciativas ecológicas y fomentan el compromiso de nuestros clientes.</p>
+            </div>
+            <div class="card">
+                <h3>Contribuciones</h3>
+                <p>Cada puesto conlleva una gran responsabilidad dentro de nuestra empresa.</p>
+
+<p>Por ejemplo, los administradores se encargan de supervisar el cumplimiento de los objetivos organizacionales.</p>
+
+<p>Nuestros promotores del área de marketing son esenciales; sin ellos, no podríamos llegar a ustedes.</p>
+
+<p>Nuestro jefe de procesamiento se encarga de supervisar la producción y garantizar la calidad de los productos.</p>
+
+<p>Tan importante como nuestro jefe en logística, quien planifica y distribuye mercancías, asegurando la eficiencia y cumplimiento de los plazos establecidos. 
+
+Y nuestros recolectores, quienes gestionan la recolección y clasificación de materiales reciclables.</p>
+
+<p>Cada espacio de nuestra empresa es importante, así como cada trabajador; pues sin uno de ellos, no estaríamos aquí. ¡Así que no dudes en venir a visitarnos; siempre damos el 1000 por ustedes!
+.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

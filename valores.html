@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valores</title>
+    
+    <style>
+    @font-face {
+        font-family: 'Berlin Sans FB';
+        src: url('ruta/a/berlin-sans-fb.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    body {
+        background-image: url('fondo1.jpg');
+        background-size: cover;
+        font-family: Arial, sans-serif;
+        color: #2f3e46;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #3cb371;
+        padding: 0.5rem;
+        text-align: center;
+        color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+
+    header h1 {
+        font-family: 'Berlin Sans FB', sans-serif;
+        font-size: 2.5rem;
+        font-weight: normal;
+        margin: 0.5rem 0;
+    }
+
+    .logo {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        width: 100px;
+        height: auto;
+    }
+
+    nav {
+        background-color: #e8f5e9;
+        padding: 1rem;
+        margin-top: 80px; /* Para separar del header fijo */
+    }
+
+    nav a {
+        margin: 0 20px;
+        color: #388e3c;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin: 6rem auto;
+        padding: 1rem;
+    }
+
+    .text-box, .final-text-box {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        max-width: 800px;
+        margin: 20px auto;
+        text-align: justify;
+    }
+
+    .text-box p, .final-text-box p {
+        color: #455a64;
+        line-height: 1.6;
+        font-family: Arial, sans-serif;
+    }
+
+    .image-box {
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 10px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        display: inline-block;
+        margin: 1rem auto;
+    }
+
+    .image-box img {
+        width: 500px;
+        height: auto;
+        border-radius: 8px;
+    }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="LOGO BIOO.png" alt="Logo de BioEmpaque" class="logo">
+    <h1>Nuestros valores</h1>
+</header>
+
+<nav>
+    <a href="historia.html">Nuestros valores</a>
+</nav>
+
+<div class="container">
+    <section>
+        <div class="text-box">
+            <p>Somos una empresa comprometida con el medio ambiente y consideramos que nuestra labor social es importante, por lo cual procuramos siempre representar los siguientes valores:</p>
+            <p><strong>Sostenibilidad:</strong> Compromiso con el medio ambiente mediante materiales reciclados y biodegradables.</p>
+            <p><strong>Innovación:</strong> Desarrollo constante de soluciones eficientes y ecológicas.</p>
+            <p><strong>Responsabilidad social:</strong> Contribuir positivamente a la comunidad y al planeta.</p>
+        </div>
+
+        <div class="image-box">
+            <img src="sano_planeta.jpg" alt="valores">
+        </div>
+    </section>
+</div>
+
+</body>
+</html>

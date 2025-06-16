@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Visión - Empresa de Empaques Biodegradables</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url("fondo1.jpg");
+      background-size: cover;
+      background-position: center;
+      color: #d4f1c5;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #3cb371;
+      color: white;
+      padding: 20px;
+      font-size: 40px;
+      font-family: Berlin Sans FB;
+      animation: fadeIn 1.5s ease-in;
+      text-align: center;
+      position: relative;
+    }
+
+    .logo {
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      width: 100px;
+      height: auto;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      background: rgba(0, 30, 0, 0.5);
+      border-radius: 15px;
+      padding: 40px 30px;
+      box-shadow: 0 0 20px rgba(0, 100, 0, 0.7);
+      text-align: justify;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 6px #114411;
+    }
+
+    p {
+      font-size: 1.5rem;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 3px #113311;
+    }
+
+    .subtext {
+      font-size: 1.1rem;
+      color: #a7d79c;
+      margin-top: 20px;
+      font-style: italic;
+      text-shadow: 1px 1px 2px #102210;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="LOGO BIOO.png" alt="Logo de BioEmpaque" class="logo">
+    Visión
+  </header>
+
+  <main>
+    <div class="container">
+      <h1>Nuestra Visión</h1>
+      <p>
+        Ser líderes en la transformación hacia un mundo sin residuos, impulsando el uso de empaques <strong>100% biodegradables</strong> que contribuyan a la protección del medio ambiente y que inspiren a otras industrias a adoptar prácticas sostenibles.
+      </p>
+      <p class="subtext">
+        "Cuidar nuestro planeta hoy para asegurar un mejor mañana."<br>
+        "Sostenibilidad que se envuelve"
+      </p>
+    </div>
+  </main>
+
+</body>
+</html>

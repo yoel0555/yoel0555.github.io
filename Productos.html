@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url('fondo1.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed;
+            font-family: Berlin Sans FB;
+            color: #2f3e46;
+        }
+
+        header {
+    background-color: #3cb371;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    font-size: 24px;
+    font-family: Berlin Sans FB;
+    font-weight: normal; /* Evita la negrita en el título */
+}
+
+        header h1 {
+    font-weight: normal; 
+}
+        header p {
+            font-family: Arial, sans-serif; 
+        }
+
+        nav {
+            background-color: #e8f5e9;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 0 20px;
+            color: #388e3c;
+            text-decoration: none;
+            font-weight: normal;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1rem;
+        }
+
+        .card-content h3 {
+            font-weight: normal; /* Sin negrita */
+        }
+
+        .card-content p {
+            font-family: Arial, sans-serif; /* Ahora usa Arial */
+            font-size: 0.95rem;
+        }
+
+        .card-content button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: normal; /* Sin negrita */
+        }
+
+        .card-content button:hover {
+            background-color: #388e3c;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            color: #388e3c;
+            font-weight: normal; /* Sin negrita */
+        }
+
+        #carrito {
+            background-color: #f1f8e9;
+            padding: 2rem;
+            margin-top: 4rem;
+            border-radius: 12px;
+        }
+
+        #carrito p {
+            text-align: center;
+            font-style: italic;
+            color: #607d8b;
+        }
+
+        footer {
+    background-color: #2e8b57;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 4rem;
+       }
+
+.footer-content p {
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+       }
+.logo {
+        position: absolute;
+        top: 40px; 
+        left: 80px;
+        width: 100px;
+        height: auto;
+    }
+    </style>
+</head>
+<body>
+
+<header>
+<img src="proyecto/LOGO BIOO.png" alt="Logo de BioEmpaque" class="logo">
+    <h1>Bio Empaque</h1>
+    <p>Sostenibilidad Que Se Envuelve 🌍</p>
+</header>  
+
+<div class="container">
+    <section id="productos">
+        <h2 class="section-title">Nuestros Productos</h2>
+        <div class="grid">
+
+            <div class="card">
+                <img src="proyecto/bolsa.png" alt="Bolsa Ecológica">
+                <div class="card-content">
+                    <h3>Bolsa De Papel</h3>
+                    <p>100% biodegradable, resistente y perfecta para tus compras diarias.</p>
+                    <p>$34.10 / 10 unidades</p>
+                    <button onclick="window.location.href='carritodecompras.html'">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="proyecto/caja_bowl.png" alt="Caja Reciclada">
+                <div class="card-content">
+                    <h3>Caja Estilo Bowl</h3>
+                    <p>Hechos de materiales vegetales. Ideales para eventos sostenibles.</p>
+                    <p>$6.50 / unidad</p>
+                    <button onclick="window.location.href='carritodecompras.html'">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="proyecto/cajaplegada.png" alt="Caja tipo Lunch">
+                <div class="card-content">
+                    <h3>Caja Tipo Lunch Plegada</h3>
+                    <p>Fabricada con papel reciclado. Ideal para envíos ecológicos.</p>
+                    <p>$5.98 / unidad</p>
+                    <button onclick="window.location.href='carritodecompras2.html'">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="proyecto/cajatapa.png" alt="Caja con tapa">
+                <div class="card-content">
+                    <h3>Caja Con Base Y Tapa</h3>
+                    <p>Alternativa ecológica y elegante a los envases de plástico.</p>
+                    <p>$6.00 / 25 unidades</p>
+                    <button onclick="window.location.href='carritodecompras.html'">Agregar al carrito</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+    <div class="footer-content">
+        <p>&copy; 2025 Bio Empaque. Todos los derechos reservados.</p>
+        <p>Contacto: <a href="mailto:Bio.empaque.mx@gmail.com">Bio.empaque.mx@gmail.com</a></p>
+    </div>
+    </footer>
+
+</div>
+
+</body>
+
+</html>
+

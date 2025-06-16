@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de compras</title>
+  <style>
+    body {
+      background-image: url('fondo1.jpg'); 
+      background-size: cover; 
+      background-position: center; 
+      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #3cb371;
+      color: white;
+      padding: 20px;
+      font-size: 40px;
+      font-family: Berlin Sans FB;
+      animation: fadeIn 1.5s ease-in;
+      text-align: center; 
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px;
+    }
+    .product {
+      background-color: white;
+      padding: 15px;
+      margin: 10px;
+      border-radius: 5px;
+      text-align: left;
+      width: 400px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+    }
+    .product img {
+      width: 80px;
+      height: 80px;
+      margin-right: 15px;
+    }
+    .product-details {
+      flex-grow: 1;
+    }
+    .product h3 {
+      font-family: Berlin Sans FB;
+      font-size: 18px;
+      font-weight: normal;
+      margin: 5px 0;
+    }
+    .product p {
+      font-size: 16px;
+      color: #555;
+      margin: 5px 0;
+    }
+    .product button {
+      padding: 8px 12px;
+      background-color: #3cb371;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .product button:hover {
+      background-color: #2e8b57;
+    }
+    .cart {
+      text-align: center;
+      margin: 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .send-button {
+      text-align: center;
+      margin: 20px;
+    }
+    .send-button button, .clear-button button {
+      padding: 10px 20px;
+      background-color: #2e8b57;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 10px;
+    }
+    .send-button button:hover, .clear-button button:hover {
+      background-color: #246b45;
+    }
+    .cart-card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      max-width: 400px;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+<img src="logo.png" alt="Logo de BioEmpaque" class="logo"> 
+Carrito de compras
+</header>
+
+<div class="container">
+  <div class="product">
+    <img src="bolsa.png" alt="Bolsas de papel">
+    <div class="product-details">
+      <h3>Bolsas de papel</h3>
+      <p>Precio: $3.41</p>
+      <button onclick="addToCart('Bolsas de papel', 3.41)">Agregar al carrito</button>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="cajaplegada.png" alt="Caja tipo lunch plegada">
+    <div class="product-details">
+      <h3>Caja tipo lunch plegada</h3>
+      <p>Precio: $5.98</p>
+      <button onclick="addToCart('Caja tipo lunch plegada', 5.98)">Agregar al carrito</button>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="cajatapa.png" alt="Caja con base y tapa">
+    <div class="product-details">
+      <h3>Caja con base y tapa</h3>
+      <p>Precio: $6.00</p>
+      <button onclick="addToCart('Caja con base y tapa', 6.00)">Agregar al carrito</button>
+    </div>
+  </div>
+
+  <div class="product">
+    <img src="caja_bowl.png" alt="Caja estilo bowl">
+    <div class="product-details">
+      <h3>Caja estilo bowl</h3>
+      <p>Precio: $6.50</p>
+      <button onclick="addToCart('Caja estilo bowl', 6.50)">Agregar al carrito</button>
+    </div>
+  </div>
+</div>
+
+<div class="cart-card">
+  <div class="cart">
+    <p><strong>Resumen del carrito</strong></p>
+    <p>Productos en carrito: <span id="productCount">0</span></p>
+    <p>Lista de productos: <span id="productList">Ninguno</span></p>
+    <p>Total: $<span id="total">0.00</span></p>
+  </div>
+</div>
+
+<div class="send-button">
+  <button onclick="enviarPedido()">Completar pedido</button>
+</div>
+
+<div class="clear-button">
+  <button onclick="limpiarCarrito()">Limpiar carrito</button>
+</div>
+
+<script>
+  let total = 0;
+  let productCount = 0;
+  let productosEnCarrito = {};
+
+  function addToCart(nombreProducto, precio) {
+    total += precio;
+    productCount++;
+
+    if (productosEnCarrito[nombreProducto]) {
+      productosEnCarrito[nombreProducto]++;
+    } else {
+      productosEnCarrito[nombreProducto] = 1;
+    }
+
+    document.getElementById("total").textContent = total.toFixed(2);
+    document.getElementById("productCount").textContent = productCount;
+    document.getElementById("productList").textContent = Object.entries(productosEnCarrito)
+      .map(([producto, cantidad]) => `${producto} x${cantidad}`).join(', ');
+  }
+
+  function enviarPedido() {
+    const totalFormateado = total.toFixed(2);
+    const asunto = encodeURIComponent("Pedido desde el carrito");
+    const cuerpo = encodeURIComponent(`Hola, me gustaría completar el siguiente pedido.\n\nCantidad de productos: ${productCount}\nProductos:\n${Object.entries(productosEnCarrito).map(([producto, cantidad]) => `- ${producto} x${cantidad}`).join('\n')}\nTotal: $${totalFormateado}\n\nGracias.`);
+    window.location.href = `mailto:Bio.empaque.mx@gmail.com?subject=${asunto}&body=${cuerpo}`;
+  }
+
+  function limpiarCarrito() {
+    total = 0;
+    productCount = 0;
+    productosEnCarrito = {};
+    
+    document.getElementById("total").textContent = "0.00";
+    document.getElementById("productCount").textContent = "0";
+    document.getElementById("productList").textContent = "Ninguno";
+  }
+</script>
+
+</body>
+</html>
+

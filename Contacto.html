@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto - Bio Empaque</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url("fondo1.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background-color: #3cb371;
+      color: white;
+      padding: 20px;
+      font-size: 40px;
+      font-family: "Berlin Sans FB", Arial, sans-serif;
+      animation: fadeIn 1.5s ease-in;
+      text-align: center; 
+      position: relative;
+    }
+
+    .logo {
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      width: 100px;
+      height: auto;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .logo2 {
+      width: 100px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      backdrop-filter: blur(8px);
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      text-align: center;
+      width: 400px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    }
+
+    .card img {
+      width: 180px;
+      height: auto;
+      object-fit: contain;
+      border-radius: 15px;
+    }
+
+    .card h2 {
+      font-size: 28px;
+      margin: 15px 0;
+      color: #1b3c1b;
+    }
+
+    .card p {
+      color: #333;
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: block;
+      padding: 16px;
+      margin: 12px 0;
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    .btn-email {
+      background-color: #d93025;
+    }
+
+    .btn-whatsapp {
+      background-color: #25d366;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="LOGO BIOO.png" alt="Logo de BioEmpaque" class="logo">
+    <p>Contáctanos</p>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="card">
+        <img src="LOGO BIOO.png" alt="Logo de BioEmpaque" class="logo2">
+
+        <h2>Bio Empaque</h2>
+        <p>Contáctanos por correo o WhatsApp</p>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Bio.empaque.mx@gmail.com" class="btn btn-email">Enviar correo</a>
+        <a href="https://wa.me/523114273608" target="_blank" class="btn btn-whatsapp">Chat en WhatsApp</a>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
