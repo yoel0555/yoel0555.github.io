@@ -11,8 +11,9 @@
             padding: 0;
             text-align: center;
             background: url(fondo1.jpg) no-repeat center center fixed;
-            background-size: cover; /* Asegura que el fondo cubra toda la pantalla */
+            background-size: cover;
         }
+
         header {
             background-color: #3cb371;
             color: white;
@@ -20,24 +21,31 @@
             font-size: 24px;
             position: relative;
         }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 80px;
+            max-width: 100%;
+            height: auto;
+        }
+
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
         }
+
         section {
             padding: 20px;
         }
+
         .destacado {
             font-family: Arial, sans-serif;
             font-size: 30px;
             color: #333;
             margin: 20px 0;
-        
-        .logo {
-    width: 80px;
-    max-width: 100%;
-    height: auto;
-}
+        }
 
         footer {
             font-family: Arial, sans-serif;
@@ -67,10 +75,7 @@
             <li>Diseño innovador y funcional</li>
         </ul>
     </section>
-    
 
-    
     <footer>&copy; 2025 BioEmpaque. Todos los derechos reservados.</footer>
 </body>
 </html>
-
