@@ -1,61 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Innovación con BioEmpaque</title>
     <style>
         body {
-            font-family: Berlin Sans FB;
+            font-family: "Berlin Sans FB", Arial, sans-serif;
             margin: 0;
             padding: 0;
             text-align: center;
             background: url(fondo1.jpg) no-repeat center center fixed;
-            background-size: cover; 
+            background-size: cover;
         }
+
         header {
-    background-color: #3cb371;
-    color: white;
-    padding: 20px;
-    font-size: 80px;
-    font-family: Berlin Sans FB;
-    animation: fadeIn 1.5s ease-in;
-    text-align: center; 
-    }
-         @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
+            background-color: #3cb371;
+            color: white;
+            padding: 20px;
+            font-size: 40px;
+            position: relative;
+        }
+
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 80px;
+            max-width: 100%;
+            height: auto;
         }
 
         section {
             padding: 20px;
         }
+
         .destacado {
             font-family: Arial, sans-serif;
             font-size: 30px;
             color: #333;
             margin: 20px 0;
         }
-        .boton {
-            font-family: Arial, sans-serif;
+
+        .btn {
             display: inline-block;
+            margin: 20px auto;
             padding: 10px 20px;
-            background-color: #007BFF;
+            background-color: #4CAF50;
             color: white;
             text-decoration: none;
             border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
         }
-        .logo {
-        position: absolute;
-        top: 40px; 
-        left: 80px;
-        width: 100px;
-        height: auto;
-    }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
 
         footer {
             font-family: Arial, sans-serif;
@@ -67,9 +68,9 @@
 </head>
 <body>
     <header>
-<img src="LOGO BIOO.png" alt="Logo de BioEmpaque" class="logo">
-Descubre la Innovación con BioEmpaque
-</header>
+        <img src="LOGO BIOO.png" alt="Logo de BioEmpaque" class="logo" />
+        Descubre la Innovación con BioEmpaque
+    </header>
     
     <section>
         <h2>¿Qué hace único a BioEmpaque?</h2>
@@ -85,10 +86,10 @@ Descubre la Innovación con BioEmpaque
             <li>Diseño innovador y funcional</li>
         </ul>
     </section>
-    
 
     
+    <a href="index.html" class="btn">Más información</a>
+
     <footer>&copy; 2025 BioEmpaque. Todos los derechos reservados.</footer>
 </body>
 </html>
-
